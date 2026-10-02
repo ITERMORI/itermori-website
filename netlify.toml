@@ -1,5 +1,6 @@
 [build]
   publish = "."
+  command = "echo 'Static site - nothing to build'"
 
 # itermori.com/admin opens the editing panel
 [[redirects]]
