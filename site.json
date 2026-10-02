@@ -1,0 +1,189 @@
+{
+  "hero": {
+    "title_en": "Building skills, knowledge and values for a better future.",
+    "title_ar": "نبني المهارات والمعرفة والقيم من أجل مستقبل أفضل.",
+    "lead_en": "We design and deliver educational, training and awareness programmes, publish knowledge, and develop digital learning solutions for schools, institutions and communities.",
+    "lead_ar": "نصمّم البرامج التربوية والتدريبية والتوعوية وننفّذها، وننشر المعرفة، ونطوّر حلول التعلّم الرقمي للمدارس والمؤسسات والمجتمع.",
+    "title_fr": "Développer les compétences, les savoirs et les valeurs pour un avenir meilleur.",
+    "lead_fr": "Nous concevons et mettons en œuvre des programmes éducatifs, de formation et de sensibilisation, publions des savoirs et développons des solutions d’apprentissage numérique pour les écoles, les institutions et les communautés."
+  },
+  "about": {
+    "title_en": "A Lebanese company serving education and society.",
+    "title_ar": "شركة لبنانية في خدمة التربية والمجتمع.",
+    "p1_en": "Itermori works across education, training, research and publishing. We create and manage educational programmes, organise courses, conferences and exhibitions, and provide educational consultancy to schools, teachers, administrators and students.",
+    "p1_ar": "تعمل إيترموري في مجالات التربية والتدريب والأبحاث والنشر. نُعدّ البرامج التربوية ونديرها، وننظّم الدورات والمؤتمرات والمعارض، ونقدّم الاستشارات التربوية للمدارس وأفراد الهيئة التعليمية والإداريين والطلاب.",
+    "p2_en": "We partner with ministries, municipalities, donors, universities and companies to develop skills, promote citizenship and social responsibility, and bring innovation, including artificial intelligence, into learning.",
+    "p2_ar": "نتعاون مع الوزارات والبلديات والجهات المانحة والجامعات والشركات لتطوير المهارات، وتعزيز قيم المواطنة والمسؤولية المجتمعية، وإدخال الابتكار، بما فيه الذكاء الاصطناعي، إلى عملية التعلّم.",
+    "title_fr": "Une entreprise libanaise au service de l’éducation et de la société.",
+    "p1_fr": "Itermori intervient dans les domaines de l’éducation, de la formation, de la recherche et de l’édition. Nous concevons et gérons des programmes éducatifs, organisons des formations, des conférences et des expositions, et apportons un conseil éducatif aux écoles, aux enseignants, aux personnels administratifs et aux élèves.",
+    "p2_fr": "Nous collaborons avec des ministères, des municipalités, des bailleurs de fonds, des universités et des entreprises pour développer les compétences, promouvoir la citoyenneté et la responsabilité sociale, et intégrer l’innovation, y compris l’intelligence artificielle, dans l’apprentissage."
+  },
+  "values": [
+    {
+      "title_en": "Quality",
+      "title_ar": "الجودة",
+      "text_en": "Programmes built on sound educational foundations.",
+      "text_ar": "برامج مبنية على أسس تربوية متينة.",
+      "title_fr": "Qualité",
+      "text_fr": "Des programmes fondés sur des bases pédagogiques solides."
+    },
+    {
+      "title_en": "Innovation",
+      "title_ar": "الابتكار",
+      "text_en": "Digital tools and AI in the service of learning.",
+      "text_ar": "أدوات رقمية وذكاء اصطناعي في خدمة التعلّم.",
+      "title_fr": "Innovation",
+      "text_fr": "Outils numériques et IA au service de l’apprentissage."
+    },
+    {
+      "title_en": "Impact",
+      "title_ar": "الأثر",
+      "text_en": "Citizenship, responsibility and service to society.",
+      "text_ar": "المواطنة والمسؤولية وخدمة المجتمع.",
+      "title_fr": "Impact",
+      "text_fr": "Citoyenneté, responsabilité et service à la société."
+    }
+  ],
+  "services": [
+    {
+      "icon": "graduation",
+      "title_en": "Training & skills development",
+      "title_ar": "التدريب وتطوير المهارات",
+      "text_en": "Training courses and workshops in education, crafts, culture, environment, health and science.",
+      "text_ar": "دورات تدريبية وورش عمل في المجالات التربوية والحرفية والثقافية والبيئية والصحية والعلمية.",
+      "title_fr": "Formation et développement des compétences",
+      "text_fr": "Formations et ateliers dans les domaines éducatif, artisanal, culturel, environnemental, sanitaire et scientifique."
+    },
+    {
+      "icon": "person",
+      "title_en": "Educational consultancy",
+      "title_ar": "الاستشارات التربوية",
+      "text_en": "Advice for educational institutions, teaching staff, administrators and students.",
+      "text_ar": "استشارات للمؤسسات التربوية وأفراد الهيئة التعليمية والإداريين والطلاب.",
+      "title_fr": "Conseil éducatif",
+      "text_fr": "Accompagnement des établissements, des enseignants, des personnels administratifs et des élèves."
+    },
+    {
+      "icon": "book",
+      "title_en": "Publishing & research",
+      "title_ar": "النشر والأبحاث",
+      "text_en": "Publishing books, scientific and cultural works, studies and research.",
+      "text_ar": "نشر الكتب والمؤلفات العلمية والثقافية، وإعداد الدراسات والأبحاث.",
+      "title_fr": "Édition et recherche",
+      "text_fr": "Publication d’ouvrages scientifiques et culturels, études et recherches."
+    },
+    {
+      "icon": "heart",
+      "title_en": "Awareness & citizenship programmes",
+      "title_ar": "برامج التوعية والمواطنة",
+      "text_en": "Programmes that strengthen citizenship values and social responsibility among students and teachers.",
+      "text_ar": "برامج تعزّز قيم المواطنة والمسؤولية المجتمعية لدى الطلاب والمعلّمين.",
+      "title_fr": "Sensibilisation et citoyenneté",
+      "text_fr": "Programmes renforçant les valeurs de citoyenneté et de responsabilité sociale chez les élèves et les enseignants."
+    },
+    {
+      "icon": "screen",
+      "title_en": "Digital learning & AI",
+      "title_ar": "التعلّم الرقمي والذكاء الاصطناعي",
+      "text_en": "Educational apps, e-games, software and artificial-intelligence solutions for learning.",
+      "text_ar": "تطبيقات تربوية وألعاب إلكترونية وبرامج كمبيوتر وحلول ذكاء اصطناعي للتعلّم.",
+      "title_fr": "Apprentissage numérique et IA",
+      "text_fr": "Applications éducatives, jeux électroniques, logiciels et solutions d’intelligence artificielle pour l’apprentissage."
+    },
+    {
+      "icon": "calendar",
+      "title_en": "Conferences, exhibitions & events",
+      "title_ar": "المؤتمرات والمعارض والفعاليات",
+      "text_en": "Organising projects, exhibitions and conferences in education and beyond.",
+      "text_ar": "تنظيم المشاريع والمعارض والمؤتمرات في المجال التربوي وغيره.",
+      "title_fr": "Conférences, expositions et événements",
+      "text_fr": "Organisation de projets, d’expositions et de conférences dans le domaine éducatif et au-delà."
+    },
+    {
+      "icon": "building",
+      "title_en": "Educational institutions",
+      "title_ar": "المؤسسات التعليمية",
+      "text_en": "Establishing, developing and managing schools, institutes and training centres.",
+      "text_ar": "إنشاء المدارس والمعاهد ومراكز التدريب وتطويرها وإدارتها.",
+      "title_fr": "Établissements d’enseignement",
+      "text_fr": "Création, développement et gestion d’écoles, d’instituts et de centres de formation."
+    },
+    {
+      "icon": "library",
+      "title_en": "School & public libraries",
+      "title_ar": "المكتبات المدرسية والعامة",
+      "text_en": "Setting up and equipping school and public libraries.",
+      "text_ar": "فتح المكتبات المدرسية والعامة وتجهيزها.",
+      "title_fr": "Bibliothèques scolaires et publiques",
+      "text_fr": "Création et équipement de bibliothèques scolaires et publiques."
+    },
+    {
+      "icon": "star",
+      "title_en": "Innovative projects",
+      "title_ar": "المشاريع الابتكارية",
+      "text_en": "Supporting innovative and educational projects with academic and scientific partners.",
+      "text_ar": "دعم المشاريع الابتكارية والتربوية بالتعاون مع جهات أكاديمية وعلمية.",
+      "title_fr": "Projets innovants",
+      "text_fr": "Soutien aux projets innovants et éducatifs avec des partenaires académiques et scientifiques."
+    }
+  ],
+  "mission": {
+    "quote_en": "\"We believe education is the most powerful way to build responsible citizens and a stronger society.\"",
+    "quote_ar": "«نؤمن بأن التربية هي الطريق الأقوى لبناء مواطنين مسؤولين ومجتمع أقوى.»",
+    "quote_fr": "« Nous croyons que l’éducation est le moyen le plus puissant de former des citoyens responsables et une société plus forte. »"
+  },
+  "partners": [
+    {
+      "icon": "book",
+      "title_en": "Schools & teachers",
+      "title_ar": "المدارس والمعلّمون",
+      "text_en": "Programmes, training and resources for educators and learners.",
+      "text_ar": "برامج وتدريب وموارد للمربّين والمتعلّمين.",
+      "title_fr": "Écoles et enseignants",
+      "text_fr": "Programmes, formations et ressources pour les éducateurs et les apprenants."
+    },
+    {
+      "icon": "graduation",
+      "title_en": "Universities & academic bodies",
+      "title_ar": "الجامعات والجهات الأكاديمية",
+      "text_en": "Joint research, projects and scientific cooperation.",
+      "text_ar": "أبحاث ومشاريع مشتركة وتعاون علمي.",
+      "title_fr": "Universités et institutions académiques",
+      "text_fr": "Recherches, projets communs et coopération scientifique."
+    },
+    {
+      "icon": "ministry",
+      "title_en": "Ministries & municipalities",
+      "title_ar": "الوزارات والبلديات",
+      "text_en": "Agreements and programmes serving public institutions.",
+      "text_ar": "اتفاقيات وبرامج في خدمة المؤسسات العامة.",
+      "title_fr": "Ministères et municipalités",
+      "text_fr": "Accords et programmes au service des institutions publiques."
+    },
+    {
+      "icon": "people",
+      "title_en": "Donors, NGOs & companies",
+      "title_ar": "الجهات المانحة والجمعيات والشركات",
+      "text_en": "Funded projects with clear goals and measurable results.",
+      "text_ar": "مشاريع ممولة بأهداف واضحة ونتائج قابلة للقياس.",
+      "title_fr": "Bailleurs, ONG et entreprises",
+      "text_fr": "Projets financés avec des objectifs clairs et des résultats mesurables."
+    }
+  ],
+  "contact": {
+    "phone": "+961 70 437 590",
+    "whatsapp": "+961 70 437 590",
+    "email": "info@itermori.com",
+    "address_en": "Bouchrieh, Metn, Lebanon",
+    "address_ar": "البوشرية، المتن، لبنان",
+    "hours_en": "9:00 AM to 5:00 PM",
+    "hours_ar": "من الساعة 9:00 صباحًا حتى 5:00 مساءً",
+    "address_fr": "Bouchrieh, Metn, Liban",
+    "hours_fr": "De 9h00 à 17h00"
+  },
+  "footer": {
+    "about_en": "Education, training and development programmes for schools, institutions and communities in Lebanon and beyond.",
+    "about_ar": "برامج تربوية وتدريبية وتنموية للمدارس والمؤسسات والمجتمع في لبنان وخارجه.",
+    "about_fr": "Programmes d’éducation, de formation et de développement pour les écoles, les institutions et les communautés au Liban et au-delà."
+  }
+}
