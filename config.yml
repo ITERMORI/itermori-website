@@ -1,0 +1,164 @@
+# Itermori content manager (Decap CMS)
+# Login: GitHub account, through Netlify's GitHub OAuth provider.
+backend:
+  name: github
+  repo: ITERMORI/itermori-website
+  branch: main
+  commit_messages:
+    update: "Website: update {{collection}}"
+
+site_url: https://itermori.com
+display_url: https://itermori.com
+logo_url: /logo.png
+
+media_folder: images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: projects
+    label: Projects
+    editor: { preview: false }
+    files:
+      - name: projects_list
+        label: "Projects (drag to reorder: the first one shows first)"
+        file: data/projects.json
+        fields:
+          - name: projects
+            label: Projects
+            label_singular: Project
+            widget: list
+            summary: "{{fields.title_en}}  ·  {{fields.year}}"
+            collapsed: true
+            add_to_top: true
+            fields:
+              - { name: id, label: "Short ID (used in the link, no spaces, e.g. school-library-2026)", widget: string, pattern: ['^[a-z0-9-]+$', "Lowercase letters, numbers and dashes only"] }
+              - { name: published, label: "Show on website", widget: boolean, default: true }
+              - { name: title_en, label: "Title (English)", widget: string }
+              - { name: title_ar, label: "العنوان (عربي)", widget: string, required: false }
+              - { name: title_fr, label: "Title (Français – optional)", widget: string, required: false }
+              - { name: status, label: "Status", widget: select, options: [{label: "Ongoing", value: ongoing}, {label: "Completed", value: completed}], default: ongoing }
+              - { name: year, label: "Year or dates (e.g. 2026 or 2025–2026)", widget: string, required: false }
+              - { name: location_en, label: "Location (English)", widget: string, required: false }
+              - { name: location_ar, label: "المكان (عربي)", widget: string, required: false }
+              - { name: location_fr, label: "Location (Français – optional)", widget: string, required: false }
+              - { name: partners, label: "Partners / donors", widget: string, required: false }
+              - { name: summary_en, label: "Short summary (English, 1–2 sentences, shown on the card)", widget: text }
+              - { name: summary_ar, label: "ملخّص قصير (عربي)", widget: text, required: false }
+              - { name: summary_fr, label: "Short summary (Français – optional)", widget: text, required: false }
+              - { name: description_en, label: "Full description (English). Leave an empty line between paragraphs.", widget: text, required: false }
+              - { name: description_ar, label: "الوصف الكامل (عربي)", widget: text, required: false }
+              - { name: description_fr, label: "Full description (Français – optional). Leave an empty line between paragraphs.", widget: text, required: false }
+              - { name: cover, label: "Main photo", widget: image, required: false }
+              - name: gallery
+                label: "More photos"
+                label_singular: Photo
+                widget: list
+                required: false
+                field: { name: image, label: Photo, widget: image }
+              - { name: eu_funded, label: "Co-funded by the European Union (shows the EU emblem and disclaimer)", widget: boolean, default: false }
+              - { name: link, label: "External link (optional)", widget: string, required: false }
+
+  - name: home
+    label: "Home page"
+    editor: { preview: false }
+    files:
+      - name: site
+        label: "Home page texts, services & contact"
+        file: data/site.json
+        fields:
+          - label: "Top of the page (hero)"
+            name: hero
+            widget: object
+            fields:
+              - { name: title_en, label: "Main headline (English)", widget: string }
+              - { name: title_ar, label: "العنوان الرئيسي (عربي)", widget: string }
+              - { name: title_fr, label: "Main headline (Français – optional)", widget: string, required: false }
+              - { name: lead_en, label: "Intro sentence (English)", widget: text }
+              - { name: lead_ar, label: "الجملة التعريفية (عربي)", widget: text }
+              - { name: lead_fr, label: "Intro sentence (Français – optional)", widget: text, required: false }
+          - label: "About us"
+            name: about
+            widget: object
+            fields:
+              - { name: title_en, label: "Title (English)", widget: string }
+              - { name: title_ar, label: "العنوان (عربي)", widget: string }
+              - { name: title_fr, label: "Title (Français – optional)", widget: string, required: false }
+              - { name: p1_en, label: "Paragraph 1 (English)", widget: text }
+              - { name: p1_ar, label: "الفقرة 1 (عربي)", widget: text }
+              - { name: p1_fr, label: "Paragraph 1 (Français – optional)", widget: text, required: false }
+              - { name: p2_en, label: "Paragraph 2 (English)", widget: text }
+              - { name: p2_ar, label: "الفقرة 2 (عربي)", widget: text }
+              - { name: p2_fr, label: "Paragraph 2 (Français – optional)", widget: text, required: false }
+          - label: "Our values (small boxes under About)"
+            name: values
+            label_singular: Value
+            widget: list
+            summary: "{{fields.title_en}}"
+            fields:
+              - { name: title_en, label: "Title (English)", widget: string }
+              - { name: title_ar, label: "العنوان (عربي)", widget: string }
+              - { name: title_fr, label: "Title (Français – optional)", widget: string, required: false }
+              - { name: text_en, label: "Text (English)", widget: text }
+              - { name: text_ar, label: "النص (عربي)", widget: text }
+              - { name: text_fr, label: "Text (Français – optional)", widget: text, required: false }
+          - label: "What we do (areas of work)"
+            name: services
+            label_singular: "Area of work"
+            widget: list
+            summary: "{{fields.title_en}}"
+            fields: &cardfields
+              - name: icon
+                label: Icon
+                widget: select
+                default: star
+                options:
+                  - { label: "Graduation cap", value: graduation }
+                  - { label: "Person", value: person }
+                  - { label: "Book", value: book }
+                  - { label: "Heart", value: heart }
+                  - { label: "Computer screen", value: screen }
+                  - { label: "Calendar", value: calendar }
+                  - { label: "School building", value: building }
+                  - { label: "Library", value: library }
+                  - { label: "Star", value: star }
+                  - { label: "Public institution", value: ministry }
+                  - { label: "Group of people", value: people }
+              - { name: title_en, label: "Title (English)", widget: string }
+              - { name: title_ar, label: "العنوان (عربي)", widget: string }
+              - { name: title_fr, label: "Title (Français – optional)", widget: string, required: false }
+              - { name: text_en, label: "Text (English)", widget: text }
+              - { name: text_ar, label: "النص (عربي)", widget: text }
+              - { name: text_fr, label: "Text (Français – optional)", widget: text, required: false }
+          - label: "Mission (red band)"
+            name: mission
+            widget: object
+            fields:
+              - { name: quote_en, label: "Mission sentence (English)", widget: text }
+              - { name: quote_ar, label: "جملة الرسالة (عربي)", widget: text }
+              - { name: quote_fr, label: "Mission sentence (Français – optional)", widget: text, required: false }
+          - label: "Who we work with (partners)"
+            name: partners
+            label_singular: "Partner type"
+            widget: list
+            summary: "{{fields.title_en}}"
+            fields: *cardfields
+          - label: "Contact details"
+            name: contact
+            widget: object
+            fields:
+              - { name: phone, label: "Phone (as shown, e.g. +961 70 437 590)", widget: string }
+              - { name: whatsapp, label: "WhatsApp number", widget: string }
+              - { name: email, label: "Email", widget: string }
+              - { name: address_en, label: "Head office address (English)", widget: string }
+              - { name: address_ar, label: "عنوان المكتب الرئيسي (عربي)", widget: string }
+              - { name: address_fr, label: "Head office address (Français – optional)", widget: string, required: false }
+              - { name: hours_en, label: "Working hours (English)", widget: string }
+              - { name: hours_ar, label: "ساعات العمل (عربي)", widget: string }
+              - { name: hours_fr, label: "Working hours (Français – optional)", widget: string, required: false }
+          - label: "Footer"
+            name: footer
+            widget: object
+            fields:
+              - { name: about_en, label: "Short company description (English)", widget: text }
+              - { name: about_ar, label: "وصف قصير للشركة (عربي)", widget: text }
+              - { name: about_fr, label: "Short company description (Français – optional)", widget: text, required: false }
